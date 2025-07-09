@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - LexLegal</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <style>
+    .contacto {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .contacto h1 {
+      margin-bottom: 1rem;
+    }
+
+    .datos-contacto {
+      margin-bottom: 2rem;
+    }
+
+    .formulario label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .formulario button {
+      margin-top: 1rem;
+      background-color: #1e90ff;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .formulario button:hover {
+      background-color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">⚖️ LexLegal</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contacto">
+    <h1>Contáctanos</h1>
+    <div class="datos-contacto">
+      <p><strong>Dirección:</strong> Calle 51C #1E-29, Barranquilla, Atlántico</p>
+      <p><strong>Teléfono:</strong> (+57) 312 345 6789</p>
+      <p><strong>Email:</strong> contacto@lexlegal.com.co</p>
+      <p><strong>Horario:</strong> Lunes a Viernes de 8:00 a.m. a 5:00 p.m.</p>
+    </div>
+
+    <form class="formulario">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LexLegal Abogados & Asesorías. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp (opcional) -->
+  <div class="whatsapp-float" onclick="abrirWhatsApp()" title="Escríbenos por WhatsApp">💬</div>
+
+  <script>
+    function abrirWhatsApp() {
+      window.open("https://wa.me/573123456789?text=Hola%2C%20quisiera%20una%20asesor%C3%ADa%20jur%C3%ADdica", "_blank");
+    }
+
+    document.querySelector(".formulario").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Gracias por tu mensaje. Te responderemos pronto.");
+    });
+  </script>
+</body>
+</html>

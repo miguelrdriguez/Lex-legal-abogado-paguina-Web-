@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Jurídico - LexLegal</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <style>
+    .blog-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .articulo {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .categoria {
+      font-weight: bold;
+      color: #1e90ff;
+    }
+
+    .fecha {
+      font-size: 0.9em;
+      color: gray;
+    }
+
+    .titulo-articulo {
+      font-size: 1.3em;
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">⚖️ LexLegal</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog-container" id="contenedor-articulos">
+    <h1>Blog Jurídico</h1>
+    <p>Noticias, análisis y artículos actualizados sobre derecho en Colombia.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LexLegal Abogados & Asesorías. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Lista de artículos
+    const articulos = [
+      {
+        titulo: "Nueva sentencia sobre alimentos en Colombia",
+        fecha: "2025-07-07",
+        categoria: "Derecho de Familia",
+        resumen: "La Corte Suprema ratifica la obligación de manutención en casos de unión libre prolongada..."
+      },
+      {
+        titulo: "Reforma al Código Penal: lo que debes saber",
+        fecha: "2025-07-05",
+        categoria: "Derecho Penal",
+        resumen: "El Congreso aprobó ajustes al Código Penal que endurecen penas por delitos económicos..."
+      },
+      {
+        titulo: "Guía práctica para registrar tu empresa en Cámara de Comercio",
+        fecha: "2025-06-28",
+        categoria: "Derecho Comercial",
+        resumen: "¿Cómo constituir una empresa SAS? Aquí te contamos los pasos legales más importantes..."
+      }
+    ];
+
+    // Mostrar artículos en orden del más reciente al más antiguo
+    articulos.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+    const contenedor = document.getElementById("contenedor-articulos");
+
+    articulos.forEach(art => {
+      const div = document.createElement("div");
+      div.className = "articulo";
+      div.innerHTML = `
+        <div class="categoria">${art.categoria}</div>
+        <div class="fecha">${new Date(art.fecha).toLocaleDateString()}</div>
+        <h2 class="titulo-articulo">${art.titulo}</h2>
+        <p>${art.resumen}</p>
+      `;
+      contenedor.appendChild(div);
+    });
+  </script>
+</body>
+</html>
