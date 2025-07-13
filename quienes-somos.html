@@ -16,7 +16,52 @@
         <li><a href="quienes-somos.html">Quiénes Somos</a></li>
         <li class="has-submenu">
           <a href="#">Servicios ▼</a>
-          <!-- aquí va tu menú de servicios igual que en index.html -->
+          <ul class="submenu">
+            <li class="has-submenu">
+              <a href="#">Derecho Civil ▸</a>
+              <ul class="submenu-right">
+                <li><a href="contratos.html">Contratos</a></li>
+                <li><a href="propiedad.html">Propiedad</a></li>
+                <li><a href="responsabilidad.html">Responsabilidad Civil</a></li>
+                <li><a href="sucesiones.html">Sucesiones</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Derecho Penal ▸</a>
+              <ul class="submenu-right">
+                <li><a href="defensa-penal.html">Defensa Penal</a></li>
+                <li><a href="medidas-cautelares.html">Medidas Cautelares</a></li>
+                <li><a href="delitos-economicos.html">Delitos Económicos</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Laboral y Administrativo ▸</a>
+              <ul class="submenu-right">
+                <li><a href="conflictos-laborales.html">Conflictos Laborales</a></li>
+                <li><a href="procesos-disciplinarios.html">Procesos Disciplinarios</a></li>
+                <li><a href="derechos-trabajador.html">Derechos del Trabajador</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Comercial y Empresarial ▸</a>
+              <ul class="submenu-right">
+                <li><a href="constitucion-empresas.html">Constitución de Empresas</a></li>
+                <li><a href="contratos-mercantiles.html">Contratos Mercantiles</a></li>
+                <li><a href="insolvencia-empresarial.html">Insolvencia Empresarial</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Asesoría Pública ▸</a>
+              <ul class="submenu-right">
+                <li><a href="contratacion-estatal.html">Contratación Estatal</a></li>
+                <li><a href="planeacion-desarrollo.html">Planeación y Desarrollo</a></li>
+                <li><a href="control-fiscal.html">Control Fiscal</a></li>
+              </ul>
+            </li>
+            <li><a href="constitucional.html">Derecho Constitucional</a></li>
+            <li><a href="ambiental.html">Derecho Ambiental</a></li>
+            <li><a href="familia.html">Derecho de Familia</a></li>
+          </ul>
         </li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -25,29 +70,52 @@
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
   </header>
 
-<section class="hero-container">
-  <div class="slider">
-    <img id="hero-image" src="imagenes/hero1.jpg" alt="Imagen hero" />
-    <div class="hero-text">
-      <h1>Bienvenido a LexLegal</h1>
-      <p>Tu firma de confianza para asesoría jurídica en el Caribe colombiano.</p>
+  <section class="hero-container">
+    <div class="slider">
+      <img id="hero-image" src="imagenes/hero1.jpg" alt="Imagen hero" />
+      <div class="hero-text">
+        <h1>Bienvenido a LexLegal</h1>
+        <p>Tu firma de confianza para asesoría jurídica en el Caribe colombiano.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section class="contenido">
-    <div class="bloque">
-      <h2>Nuestra Historia</h2>
-      <p>LexLegal Abogados & Asesorías nace con el propósito de brindar soluciones jurídicas integrales, confiables y accesibles. Nuestra experiencia combina el conocimiento académico con la práctica profesional en distintas áreas del Derecho.</p>
+
+    <!-- Historia -->
+    <div class="bloque bloque-con-imagen">
+      <div class="bloque-texto">
+        <h2>Nuestra Historia</h2>
+        <p>LexLegal Abogados & Asesorías nace con el propósito de brindar soluciones jurídicas integrales, confiables y accesibles. Nuestra experiencia combina el conocimiento académico con la práctica profesional en distintas áreas del Derecho.</p>
+      </div>
+      <div class="bloque-img">
+        <img src="historia.jpg" alt="Nuestra Historia" />
+      </div>
     </div>
-    <div class="bloque">
-      <h2>Misión</h2>
-      <p>Prestar asesoría jurídica ética, efectiva y especializada, contribuyendo a la defensa de los derechos de nuestros clientes y al fortalecimiento institucional en Colombia.</p>
+
+    <!-- Misión -->
+    <div class="bloque bloque-con-imagen">
+      <div class="bloque-texto">
+        <h2>Misión</h2>
+        <p>En LEXLEGAL Abogados & Asesorías, con sede en Barranquilla, ofrecemos asesoría jurídica integral, ética y personalizada a personas y empresas que requieren respaldo legal en sus decisiones y procesos. Nuestro compromiso es brindar soluciones efectivas y claras, fortaleciendo la confianza de nuestros clientes a través de un servicio profesional, cercano y transparente.</p>
+      </div>
+      <div class="bloque-img">
+        <img src="mision.jpg" alt="Misión" />
+      </div>
     </div>
-    <div class="bloque">
-      <h2>Visión</h2>
-      <p>Ser reconocidos como una firma de referencia en la región Caribe hacia 2030, por nuestra calidad, compromiso social y excelencia en el servicio.</p>
+
+    <!-- Visión -->
+    <div class="bloque bloque-con-imagen">
+      <div class="bloque-texto">
+        <h2>Visión</h2>
+        <p>Consolidarnos para el año 2030 como una firma jurídica de referencia en Barranquilla y la región Caribe, reconocida por su excelencia, compromiso social y capacidad de respuesta ante los retos legales de nuestros clientes. Aspiramos a ser el aliado jurídico estratégico más confiable para quienes buscan seguridad y respaldo legal en su vida personal o empresarial.</p>
+      </div>
+      <div class="bloque-img">
+        <img src="vision.jpg" alt="Visión" />
+      </div>
     </div>
+
+    <!-- Valores -->
     <div class="bloque">
       <h2>Valores</h2>
       <ul>
@@ -59,18 +127,22 @@
     </div>
   </section>
 
-  <div class="whatsapp-float" onclick="abrirWhatsApp()">💬</div>
-  <!-- Redes sociales -->
-<div class="redes-sociales">
-  <a href="https://www.facebook.com/profile.php?id=100093973742562" target="_blank"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://www.instagram.com/lexl_egal?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://x.com/lexlegalaboga?t=zo62cnpKiYSlEdYHq6lD8g&s=09" target="_blank"><i class="fab fa-x-twitter"></i></a>
-  <a href="https://www.linkedin.com/in/lex-legal-abogado-y-asesor%C3%ADa-abogado-asesor%C3%ADa-503aab361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://wa.me/57301294" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lexlegalabogadosasesorias@gmail.com" target="_blank">
-  <i class="fas fa-envelope"></i>
-</a>
-</div>
+  <!-- Botón flotante WhatsApp -->
+  <div class="whatsapp-float" onclick="abrirWhatsApp()" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <!-- REDES SOCIALES -->
+  <div class="redes-sociales">
+    <a href="https://www.facebook.com/profile.php?id=100093973742562" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/lexl_egal?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class=""="fab fa-instagram"></i></a>
+    <a href="https://x.com/lexlegalaboga?t=zo62cnpKiYSlEdYHq6lD8g&s=09" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/lex-legal-abogado-y-asesor%C3%ADa-abogado-asesor%C3%ADa-503aab361" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://wa.me/573012945597" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="mailto:lexlegalabogadosasesorias@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.tiktok.com/@lexlegalabogadosasesaria?_t=ZS-8xvExaTgWBU&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https:t.me/Lexlegal" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+  </div>
 
   <footer>
     <p>&copy; 2025 LexLegal Abogados & Asesorías. Todos los derechos reservados.</p>
